@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chainsaw Man</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <script src="./index.js" defer></script>
-</head>
-<body>
-    <h1>test</h1>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#"
+        ><div class="logo">
+          <img src="./images/logo.jpg" alt="" /></div
+      ></a>
+
+      <div class="header-button">
+        <div class="sound-button">
+          <i class="fa-solid fa-volume-high"></i>
+          <!-- <i class="fa-solid fa-volume-xmark"></i> -->
+        </div>
+        <div class="watch-now-button">
+          <button class="watch-btn">Watch Now</button>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#"> About</a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-solid fa-dice-two"></i>Characters</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-dice-three"></i>FAQ</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-dice-four"></i>CONTACT ME</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <video autoplay muted loop id="video-bg">
+        <source src="./images/hero-bg.mp4" />
+      </video>
+    </main>
+    <footer></footer>
+  </body>
 </html>

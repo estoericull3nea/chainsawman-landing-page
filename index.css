@@ -10,6 +10,7 @@
   text-decoration: none;
   list-style-type: none;
   scroll-behavior: smooth;
+  /* border: 1px solid red; */
 }
 
 /* :root {
@@ -23,3 +24,84 @@
 section {
   padding: 50px 5%;
 } */
+
+header .logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+header * {
+  font-family: 'Silkscreen', cursive;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 0 5%;
+
+  background: #d89c81;
+  height: 58px;
+}
+
+header .header-button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+header nav {
+  flex: 3;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+header nav ul li a {
+  color: #4a2e42;
+}
+
+.fa-solid {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.watch-btn {
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  background: #996432;
+  color: white;
+}
+
+.fa-volume-high {
+  font-size: 0.9rem;
+}
+
+main {
+  height: calc(100vh - 58px);
+
+  position: relative;
+  width: 100%;
+}
+
+main #video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
