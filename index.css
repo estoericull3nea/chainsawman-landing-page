@@ -74,6 +74,7 @@ header nav ul li a {
   font-size: 1.5rem;
   vertical-align: middle;
   cursor: pointer;
+  color: rgba(134, 12, 12, 0.62);
 }
 
 .watch-btn {
@@ -104,4 +105,79 @@ main #video-bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+video {
+  z-index: -1;
+}
+
+.center-box {
+  color: white;
+
+  height: inherit;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0px 8%;
+}
+
+.center-box .box {
+  height: 450px;
+  padding: 0px 3%;
+  width: 100%;
+
+  background-color: rgba(255, 0, 0, 0.23);
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.center-box .box .right {
+  display: grid;
+  place-items: center;
+}
+
+.center-box .box .left {
+  display: grid;
+  place-items: center;
+  row-gap: 1.5rem;
+  width: 100%;
+}
+
+.center-box .box .left h2 {
+  font-family: 'Silkscreen', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.center-box .box .left p {
+  width: 90%;
+  text-align: center;
+}
+
+.center-box .box .right img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.donate-btn {
+  padding: 20px 61px;
+  border-radius: 70px;
+  border-color: red;
+  outline: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.donate-btn:hover {
+  border-color: rgba(255, 0, 0, 0.42);
+  color: rgba(255, 255, 255, 0.641);
 }
