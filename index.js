@@ -14,3 +14,13 @@ if (vol) {
     }
   })
 }
+
+const faBars = document.querySelector('.fa-bars')
+const nav = document.querySelector('nav')
+
+if (faBars) {
+  faBars.addEventListener('click', () => {
+    nav.classList.toggle('open')
+    faBars.classList.toggle('fa-xmark')
+  })
+}
