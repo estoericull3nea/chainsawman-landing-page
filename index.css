@@ -165,6 +165,12 @@ video {
   border-radius: 5px;
 }
 
+audio {
+  position: absolute;
+  top: -999999;
+  left: -999999;
+}
+
 .donate-btn {
   padding: 20px 61px;
   border-radius: 70px;
