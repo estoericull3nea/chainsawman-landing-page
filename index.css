@@ -223,6 +223,21 @@ audio {
   display: none;
 }
 
+.do-you-want-to-proceed {
+  height: auto;
+  width: 100%;
+  background: rgba(84, 15, 15, 0.976);
+}
+
+.do-you-want-to-proceed .bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.do-you-want-to-proceed .bottom .box video {
+  width: 500px;
+}
+
 @media (max-width: 991px) {
   header nav {
     /* flex: 3; */
@@ -288,5 +303,11 @@ audio {
   .center-box .box .right img {
     width: 100%;
     height: 300px;
+  }
+}
+
+@media (max-width: 386px) {
+  .center-box .box .right img {
+    display: none;
   }
 }
