@@ -1,5 +1,6 @@
 const vol = document.querySelector('.fa-volume-xmark')
 const myAudio = document.querySelector('.myAudio')
+const myVideo = document.querySelector('.myVideo')
 
 if (vol) {
   vol.addEventListener('click', () => {
@@ -7,10 +8,12 @@ if (vol) {
       myAudio.play()
       vol.classList.remove('fa-volume-xmark')
       vol.classList.add('fa-volume-high')
+      myVideo.play()
     } else {
       myAudio.pause()
       vol.classList.add('fa-volume-xmark')
       vol.classList.remove('fa-volume-high')
+      myVideo.pause()
     }
   })
 }

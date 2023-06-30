@@ -231,10 +231,10 @@ audio {
 
 .do-you-want-to-proceed .bottom {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   place-items: center;
 
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
 .do-you-want-to-proceed .bottom .box video {
@@ -279,6 +279,26 @@ audio {
   font-family: 'Silkscreen', cursive;
   text-shadow: 2px 2px 10px white;
   font-size: 3rem;
+}
+
+.pre-footer {
+  height: 100vh;
+  width: 100%;
+  background: no-repeat url('./images/test.webp') center center/ cover;
+
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.pre-footer h1 {
+  color: rgb(235, 131, 131);
+  font-style: italic;
+  width: 70%;
+  background: black;
+  border-radius: 10px;
+  padding: 20px 0px;
+  text-shadow: 7px 6px 6px rgb(235, 131, 131);
 }
 
 @media (max-width: 991px) {
@@ -347,10 +367,27 @@ audio {
     width: 100%;
     height: 300px;
   }
+
+  .pre-footer h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 719px) {
+  .do-you-want-to-proceed {
+    padding-top: 11rem;
+  }
 }
 
 @media (max-width: 386px) {
   .center-box .box .right img {
     display: none;
+  }
+
+  .pre-footer h1 {
+    font-size: 1rem;
+  }
+  .do-you-want-to-proceed {
+    padding-top: 0;
   }
 }
