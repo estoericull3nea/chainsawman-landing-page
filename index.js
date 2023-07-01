@@ -1,7 +1,11 @@
 const vol = document.querySelector('.fa-volume-xmark')
 const myAudio = document.querySelector('.myAudio')
 const myVideo = document.querySelector('.myVideo')
+const faBars = document.querySelector('.fa-bars')
+const nav = document.querySelector('nav')
+const header = document.querySelector('header')
 
+// volume click
 if (vol) {
   vol.addEventListener('click', () => {
     if (myAudio.paused) {
@@ -18,10 +22,7 @@ if (vol) {
   })
 }
 
-const faBars = document.querySelector('.fa-bars')
-const nav = document.querySelector('nav')
-const header = document.querySelector('header')
-
+// menu bar click
 if (faBars) {
   faBars.addEventListener('click', () => {
     nav.classList.toggle('open')
@@ -29,6 +30,7 @@ if (faBars) {
   })
 }
 
+// if scroll page
 window.addEventListener('scroll', () => {
   nav.classList.remove('open')
   faBars.classList.remove('fa-xmark')
