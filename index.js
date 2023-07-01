@@ -20,6 +20,7 @@ if (vol) {
 
 const faBars = document.querySelector('.fa-bars')
 const nav = document.querySelector('nav')
+const header = document.querySelector('header')
 
 if (faBars) {
   faBars.addEventListener('click', () => {
@@ -27,3 +28,9 @@ if (faBars) {
     faBars.classList.toggle('fa-xmark')
   })
 }
+
+window.addEventListener('scroll', () => {
+  nav.classList.remove('open')
+  faBars.classList.remove('fa-xmark')
+  header.classList.toggle('sticky', window.scrollY > 0)
+})
